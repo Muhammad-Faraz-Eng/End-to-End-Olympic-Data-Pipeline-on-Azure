@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "@{dataset().relativePath}",
+			"url": "https://raw.githubusercontent.com/Muhammad-Faraz-Eng/End-to-End-Olympic-Data-Pipeline-on-Azure/refs/heads/main/datasets/",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
