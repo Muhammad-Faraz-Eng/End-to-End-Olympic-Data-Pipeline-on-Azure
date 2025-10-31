@@ -1,0 +1,17 @@
+{
+	"name": "json_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			}
+		},
+		"schema": {}
+	}
+}
