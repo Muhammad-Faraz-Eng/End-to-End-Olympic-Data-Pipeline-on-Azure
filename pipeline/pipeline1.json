@@ -61,7 +61,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@json(activity('Lookup_json').output.firstRow.datasets)\n",
+						"value": "@activity('Lookup_json').output.value[0].datasets\n",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -90,12 +90,14 @@
 									}
 								},
 								"sink": {
-									"type": "ParquetSink",
+									"type": "DelimitedTextSink",
 									"storeSettings": {
 										"type": "AzureBlobFSWriteSettings"
 									},
 									"formatSettings": {
-										"type": "ParquetWriteSettings"
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".txt"
 									}
 								},
 								"enableStaging": false,
@@ -122,7 +124,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "Parquet1",
+									"referenceName": "DelimitedText2",
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "source",
