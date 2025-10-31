@@ -1,0 +1,9 @@
+{
+	"name": "olympicdfaFaraz",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "10b5e138-7ef1-4592-9d5b-4f5d47bfc062",
+		"tenantId": "83efc3b4-39a2-4dec-a3c2-b8f7be8f7a28"
+	}
+}
