@@ -1,0 +1,30 @@
+{
+  "base_path": "https://raw.githubusercontent.com/Muhammad-Faraz-Eng/End-to-End-Olympic-Data-Pipeline-on-Azure/refs/heads/main/datasets/",
+  "datasets": [
+    {
+      "name": "Athletes",
+      "relative_path": "Athletes.csv",
+      "table_name": "athletes"
+    },
+    {
+      "name": "Coaches",
+      "relative_path": "Coaches.csv",
+      "table_name": "coaches"
+    },
+    {
+      "name": "EntriesGender",
+      "relative_path": "EntriesGender.csv",
+      "table_name": "entries_gender"
+    },
+    {
+      "name": "Medals",
+      "relative_path": "Medals.csv",
+      "table_name": "medals"
+    },
+    {
+      "name": "Teams",
+      "relative_path": "Teams.csv",
+      "table_name": "teams"
+    }
+  ]
+}
